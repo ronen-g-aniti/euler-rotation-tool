@@ -11,6 +11,10 @@ The Euler Rotation Tool is a Python-based application designed to visualize and 
 - **Interactive Animation**: Animate the rotation and translation of the body frame over time.
 - **Customizable Trajectories**: Define custom trajectories for translation and rotation.
 
+## Screenshot
+
+![Screenshot](docs/euler_animation_tool.png) 
+
 ## Installation
 
 To use the Euler Rotation Tool, you need to have Python and the following libraries installed:
@@ -69,6 +73,7 @@ The Euler Rotation Tool uses a combination of translation and rotation matrices 
 The rotation matrices for the ZYX order are defined as follows:
 
 - **Rotation around the Z-axis**:
+  
   $$ 
   R_z(\psi) = \begin{bmatrix}
   \cos \psi & -\sin \psi & 0 \\
@@ -78,6 +83,7 @@ The rotation matrices for the ZYX order are defined as follows:
   $$
 
 - **Rotation around the Y-axis**:
+  
   $$ 
   R_y(\theta) = \begin{bmatrix}
   \cos \theta & 0 & \sin \theta \\
@@ -87,6 +93,7 @@ The rotation matrices for the ZYX order are defined as follows:
   $$
 
 - **Rotation around the X-axis**:
+  
   $$ 
   R_x(\phi) = \begin{bmatrix}
   1 & 0 & 0 \\
@@ -96,11 +103,13 @@ The rotation matrices for the ZYX order are defined as follows:
   $$
 
 The combined rotation matrix $R$ is obtained by multiplying these matrices in the ZYX order:
+
 $$
 R = R_z(\psi) R_y(\theta) R_x(\phi)
 $$
 
 The translation vector $T$ is defined as:
+
 $$
 T = \begin{bmatrix}
 dx \\
@@ -110,9 +119,11 @@ dz
 $$
 
 The new position $P'$ of a point $P$ after rotation and translation is given by:
+
 $$
 P' = R \cdot P + T
 $$
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
