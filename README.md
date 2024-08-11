@@ -73,34 +73,34 @@ The Euler Rotation Tool uses a combination of translation and rotation matrices 
 The rotation matrices for the ZYX order are defined as follows:
 
 - **Rotation around the Z-axis**:
-  
-  $$ 
-  R_z(\psi) = \begin{bmatrix}
-  \cos \psi & -\sin \psi & 0 \\
-  \sin \psi & \cos \psi & 0 \\
-  0 & 0 & 1
-  \end{bmatrix}
-  $$
+
+$$ 
+R_z(\psi) = \begin{bmatrix}
+\cos \psi & -\sin \psi & 0 \\
+\sin \psi & \cos \psi & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
 
 - **Rotation around the Y-axis**:
-  
-  $$ 
-  R_y(\theta) = \begin{bmatrix}
-  \cos \theta & 0 & \sin \theta \\
-  0 & 1 & 0 \\
-  -\sin \theta & 0 & \cos \theta
-  \end{bmatrix}
-  $$
+
+$$ 
+R_y(\theta) = \begin{bmatrix}
+\cos \theta & 0 & \sin \theta \\
+0 & 1 & 0 \\
+-\sin \theta & 0 & \cos \theta
+\end{bmatrix}
+$$
 
 - **Rotation around the X-axis**:
-  
-  $$ 
-  R_x(\phi) = \begin{bmatrix}
-  1 & 0 & 0 \\
-  0 & \cos \phi & -\sin \phi \\
-  0 & \sin \phi & \cos \phi
-  \end{bmatrix}
-  $$
+
+$$ 
+R_x(\phi) = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos \phi & -\sin \phi \\
+0 & \sin \phi & \cos \phi
+\end{bmatrix}
+$$
 
 The combined rotation matrix $R$ is obtained by multiplying these matrices in the ZYX order:
 
